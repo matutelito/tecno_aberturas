@@ -58,7 +58,7 @@ footer{
 }
 
 .container_logo{
-  height: 100px; 
+  padding: 25px 0; 
   background-color: white; 
   position: relative; 
   display: flex; 
@@ -70,7 +70,7 @@ footer{
 
 .container_banner{
   background: linear-gradient(rgb(0 0 0 / 88%), rgb(89 17 17 / 86%)), url(img_1.webp); 
-  height: calc(100vh - 100px); 
+  height: 80vh; 
   width: 100%;
   max-width: 100%;
 }

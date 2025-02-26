@@ -34,3 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+console.log(document.querySelector(".logo"));
+document.querySelector(".logo").addEventListener("click", function() {
+
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});

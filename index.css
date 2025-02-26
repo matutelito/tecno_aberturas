@@ -40,7 +40,9 @@ footer{
   gap: 20px;
 }
 
-
+.logo{
+  cursor: pointer;
+}
 .row>* {
   padding: 5px!important
 }
@@ -66,7 +68,7 @@ footer{
 }
 
 .container_banner{
-  background: linear-gradient(rgb(0 0 0), rgb(38 149 141 / 34%)), url(banner2.jpg);
+  background: linear-gradient(rgb(0 0 0), rgb(38 149 141 / 68%)), url(banner2.jpg);
   background-position: top;
   background-size: cover; 
   height: 80vh; 
@@ -82,7 +84,6 @@ footer{
   max-width: 100%;
   align-items: center;
   color: #ffffff; 
-  
   word-wrap: break-word;
   text-align: center;
 }
@@ -150,7 +151,7 @@ footer{
   opacity: 0;
   cursor: pointer;
   transition: all 0.8s ease;
-  z-index: 10;
+  z-index: 0;
 }
 
 .image-container:hover .zoom-btn {

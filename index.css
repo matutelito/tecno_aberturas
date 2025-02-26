@@ -54,10 +54,11 @@ footer{
 .container{
   max-width: 1500px!important;
   margin: 100px auto;
+  padding: 0 25px;
 }
 
 .container_logo{
-  padding: 25px 0; 
+  padding: 25px 15px; 
   background-color: white; 
   position: relative; 
   display: flex; 
@@ -81,11 +82,12 @@ footer{
   display: flex; 
   justify-content: center; 
   height:100%; 
-  max-width: 100%;
+  max-width: 70%;
   align-items: center;
   color: #ffffff; 
   word-wrap: break-word;
   text-align: center;
+  margin: auto;
 }
 
 #logo_diseño{
@@ -230,4 +232,10 @@ footer{
     padding: 5px 10px!important
   }  
 
+}
+
+@media (max-height: 700px) {
+  .container_banner{
+    height: calc(80vh - 20px);
+  }
 }

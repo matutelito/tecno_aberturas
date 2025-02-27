@@ -14,10 +14,14 @@ h1{
 }
 
 h2{
-  font-size: calc(1.2em + 1vw);
+  font-size: calc(1.5em + 0.8vw);
   line-height: 1.8em;
-  letter-spacing: 1.5vw;
+  letter-spacing: 1vw;
   margin-bottom: 0!important; 
+}
+h4{
+  font-size: calc(1em + 0.6vw);
+  letter-spacing: 0.2vw;
 }
 
 img {
@@ -52,14 +56,18 @@ footer{
 }
 
 .container{
-  max-width: 1500px!important;
   margin: 100px auto;
   padding: 0 25px;
+  text-align: center;
+}
+.navBar{
+  max-width: 100%;;
+  /* background: linear-gradient(115deg, rgb(6 65 64) 0%, rgb(0 130 135) 35%, rgb(1 62 69) 100%); */
 }
 
 .container_logo{
+  max-width: 1500px!important;
   padding: 25px 15px; 
-  background-color: white; 
   position: relative; 
   display: flex; 
   justify-content: center; 

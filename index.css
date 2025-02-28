@@ -218,11 +218,14 @@ footer{
 }
 
 .modal.fade .modal-dialog{
-  background-color: rgba(0, 0, 0, 0.836);
   border-radius: 8px;
 }
 .modal-dialog-centered{
   min-height: 85vh;
+}
+.modal-backdrop {
+  background-color: #000;
+  opacity: 0.9!important; 
 }
 
 @media (max-width: 500px) {

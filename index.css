@@ -77,8 +77,9 @@ footer{
 }
 
 .container_banner{
-  background: linear-gradient(rgb(0 0 0), rgb(38 149 141 / 68%)), url(banner2.jpg);
+  background: linear-gradient(rgb(0 0 0), rgb(38 149 141 / 68%)), url(banner2.webp);
   background-position: top;
+  background-repeat: no-repeat;
   background-size: cover; 
   height: 80vh; 
   width: 100%;

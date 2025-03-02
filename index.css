@@ -255,7 +255,9 @@ footer{
     margin: 100 auto;
     margin-bottom: 0px;
   }
-  .container_banner{
+  .container_banner {
+    height: calc(100vh - 170px);
     height: calc(100dvh - 170px);
+    height: calc(min(100vh, 100dvh) - 170px);
   }
 }

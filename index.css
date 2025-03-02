@@ -81,7 +81,7 @@ footer{
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 80vh; 
+  height: calc(100vh - 170px); 
   width: 100%;
   max-width: 100%;
 }

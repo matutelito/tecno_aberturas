@@ -36,7 +36,7 @@ video{
 
 footer{
   width: 100%;
-  height: 250px;
+  height: 200px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -145,6 +145,11 @@ footer{
   cursor:pointer
 }
 
+.zoom-icon{
+  color: rgba(185, 185, 185, 0.548);
+  font-size: 36px;
+}
+
 .zoom-btn {
   display: flex;
   justify-content: center;
@@ -153,7 +158,7 @@ footer{
   position: absolute;
   bottom: 45%;
   left: 45%;
-  background-color: rgba(187, 46, 46, 0);
+  background-color: rgba(255, 255, 255, 0);
   padding: 0 5px;
   border-radius: 5px;
   border: none;
@@ -162,7 +167,7 @@ footer{
   opacity: 0;
   cursor: pointer;
   transition: all 0.8s ease;
-  z-index: 0;
+  z-index: 10;
 }
 
 .image-container:hover .zoom-btn {
@@ -224,6 +229,7 @@ footer{
 
 .modal-dialog-centered{
   min-height: 85vh;
+  min-width: 1500px;
 }
 .modal-body{
   padding: 0
@@ -260,4 +266,7 @@ footer{
     height: calc(100dvh - 170px);
     height: calc(min(100vh, 100dvh) - 170px);
   }
+  footer{
+    height: 200px
+  };
 }

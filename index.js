@@ -44,24 +44,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll(".image-container img");
   const carouselInner = document.querySelector("#carouselImages .carousel-inner");
   const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+
   images.forEach((img, index) => {
-      img.addEventListener("click", function () {
-          carouselInner.innerHTML = "";
+    img.parentElement.addEventListener("click", function () {
+      carouselInner.innerHTML = ""; // Limpia el carrusel antes de cargar imágenes
 
-          images.forEach((image, i) => {
-              let activeClass = (i === index) ? "active" : "";
-              carouselInner.innerHTML += `
-                  <div class="carousel-item ${activeClass}">
-                      <img src="${image.src}" class="d-block w-100" alt="Imagen ${i + 1}">
-                  </div>
-              `;
-          });
+      images.forEach((image, i) => {
+        const imgSrc = image.getAttribute("src"); // Asegura que siempre es la imagen
+        let activeClass = (i === index) ? "active" : "";
 
-          modal.show();
+        carouselInner.innerHTML += `
+          <div class="carousel-item ${activeClass}">
+              <img src="${imgSrc}" class="d-block w-100" alt="Imagen ${i + 1}">
+          </div>
+        `;
       });
+
+      modal.show();
+    });
   });
 });
-
 
 // footer
 function obtenerAnioActual() {

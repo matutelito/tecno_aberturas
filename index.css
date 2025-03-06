@@ -275,8 +275,6 @@ footer{
     margin-bottom: 0px;
   }
   .container_banner, .layout_banner {
-    /* height: calc(100vh - 170px);
-    height: calc(100dvh - 170px); */
     height: calc(min(100vh, 100dvh) - 100px);
   }
   footer{

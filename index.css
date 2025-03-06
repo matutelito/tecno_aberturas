@@ -62,6 +62,10 @@ footer{
 }
 .navBar{
   max-width: 100%;;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
   /* background: linear-gradient(115deg, rgb(6 65 64) 0%, rgb(0 130 135) 35%, rgb(1 62 69) 100%); */
 }
 
@@ -76,7 +80,7 @@ footer{
   margin: 0 auto
 }
 
-.container_banner{
+.layout_banner{
   background: linear-gradient(rgb(25 40 91 / 81%), rgb(0 125 116 / 71%)), url(banner2.webp);
   background-position: top;
   background-repeat: no-repeat;
@@ -84,6 +88,15 @@ footer{
   height: calc(100vh - 170px); 
   width: 100%;
   max-width: 100%;
+  position: absolute;
+}
+
+.container_banner{
+  height: calc(100vh - 100px); 
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .legend{
@@ -261,10 +274,10 @@ footer{
     margin: 100 auto;
     margin-bottom: 0px;
   }
-  .container_banner {
-    height: calc(100vh - 170px);
-    height: calc(100dvh - 170px);
-    height: calc(min(100vh, 100dvh) - 170px);
+  .container_banner, .layout_banner {
+    /* height: calc(100vh - 170px);
+    height: calc(100dvh - 170px); */
+    height: calc(min(100vh, 100dvh) - 100px);
   }
   footer{
     height: 200px

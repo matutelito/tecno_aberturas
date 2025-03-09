@@ -66,6 +66,7 @@ footer{
   background-color: white;
   width: 100%;
   z-index: 3;
+  box-shadow: 0px 2px 10px 2px #a5a5a52b;
   /* background: linear-gradient(115deg, rgb(6 65 64) 0%, rgb(0 130 135) 35%, rgb(1 62 69) 100%); */
 }
 

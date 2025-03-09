@@ -40,7 +40,7 @@
     </a>
     <nav class="navBar">
         <div class=" container_logo">
-            <div style="display: flex; align-items:center">
+            <div style="display: flex; align-items:center" class="logo">
                 <div style="height: 20px; width: 8px; border: 1px solid black; margin: 1px"></div>
                 <div style="height: 20px; width: 8px; border: 1px solid black; margin: 1px"></div>
                 <div style="height: 20px; width: 8px; border: 1px solid black; margin: 1px"></div>
@@ -71,7 +71,7 @@
             </div>
             <div class="col col-12 col-sm-6 col-lg-4">
                 <div class="image-container">
-                    <button  class="zoom-btn"><i id="play-icon" class="ri-play-circle-line play-icon"></i></button>
+                    <button onclick="togglePlay('video_1')"  class="zoom-btn"><i id="play-icon" class="ri-play-circle-line play-icon"></i></button>
                     <video id="video_1" style="max-height: 100%;" width="100%" muted controls>
                         <source src="assests/video.mp4">
                     </video>

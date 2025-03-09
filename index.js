@@ -71,6 +71,20 @@ function obtenerAnioActual() {
 }
 document.getElementById("year").textContent = `© ${obtenerAnioActual()} Todos los derechos reservados.`;
 
+function togglePlay(videoId) {
+  const video = document.getElementById(videoId);
+  const playIcon = document.getElementById("play-icon");
+
+  if (video.paused) {
+      video.play();
+      playIcon.classList.remove("ri-play-circle-line");
+      playIcon.classList.add("ri-pause-circle-line");
+  } else {
+      video.pause();
+      playIcon.classList.remove("ri-pause-circle-line");
+      playIcon.classList.add("ri-play-circle-line");
+  }
+}
 
 // AOS.init({
 //   once: true,

@@ -1,11 +1,12 @@
 // navigation logo
-document.querySelector(".logo").addEventListener("click", function() {
-  window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+document.querySelectorAll(".container_logo").forEach(function(element) {
+  element.addEventListener("click", function() {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
   });
 });
-
 
 // fetch api google drive img
 

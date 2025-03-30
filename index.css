@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Continuumb';
+  src: url('./fonts/contb.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
 :root {
   --color-azul: rgb(50, 158, 230);
   --color-verde: rgb(206, 243, 41);
@@ -57,16 +64,6 @@ footer{
   flex-direction: column;
 }
 
-.logo{
-  font-family: 'Continuum';
-  margin-left: 5px; 
-  letter-spacing: calc(1px);
-  font-size: calc(18px + 0.4vw);  
-  margin-bottom: 0;
-  color: #258FE7;
-  font-weight: 600;
-}
-
 .row>* {
   padding: 5px!important
 }
@@ -103,6 +100,33 @@ footer{
   margin: 0 auto
 }
 
+.name_logo{
+  font-family: 'Continuumb';
+  margin-left: 5px; 
+  letter-spacing: calc(2px);
+  font-size: calc(18px + 0.6vw);  
+  margin-bottom: 0;
+  color: #258FE7;
+  font-weight: 700;
+}
+
+.leyend_logo{
+  font-family: 'Continuum';
+  margin-left: 10px; 
+  font-size: calc(0.7em);
+  color:red;
+  font-weight: 600;
+  letter-spacing: calc(1px);
+  line-height: 1.1em;
+}
+
+.logotipo{
+  width: 46px;
+  margin-right: 8px;
+  filter: none;
+  height: auto;
+}
+
 .layout_banner{
   background: linear-gradient(rgb(0 101 169), rgb(117 131 53 / 43%)), url(banner2.webp);
   background-repeat: no-repeat;
@@ -133,11 +157,11 @@ footer{
 }
 
 .legend h2{
-  color: #bb1414; 
+  color: #ffffff; 
   word-wrap: break-word;
   text-align: center;
-  font-family: 'Continuum';
-  font-weight: 600;
+  font-family: 'inter';
+  font-weight: 500;
   line-height: 1.8em;
   letter-spacing: 0.7vw;
 }

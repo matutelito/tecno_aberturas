@@ -13,9 +13,9 @@
 }
 
 :root {
-  --color-azul: rgb(50, 158, 230);
-  --color-verde: rgb(206, 243, 41);
-  --color-naranja: rgb(253, 179, 129);
+  --color-azul: #79CFFA;
+  --color-verde: #BCE39F;
+  --color-naranja: #FBBA91;
 }
 
 body{
@@ -73,7 +73,7 @@ footer{
 }
 
 .container{
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 0 25px;
   text-align: center;
 }
@@ -83,15 +83,15 @@ footer{
   position: fixed;
   background-color: white;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
   box-shadow: 0px 2px 10px 2px #a5a5a52b;
   padding: 15px 0px
 }
 
 .container_logo{
   cursor: pointer;
-  max-width: 1500px!important;
-  padding: 5px 15px; 
+  max-width: 1300px!important;
+  padding: 5px 0px; 
   position: relative; 
   display: flex; 
   justify-content: center; 
@@ -104,7 +104,7 @@ footer{
   font-family: 'Continuumb';
   margin-left: 5px; 
   letter-spacing: calc(2px);
-  font-size: calc(18px + 0.6vw);  
+  font-size: calc(10px + 0.5vw);  
   margin-bottom: 0;
   color: #258FE7;
   font-weight: 700;
@@ -115,45 +115,49 @@ footer{
   margin-left: 10px; 
   font-size: calc(0.7em);
   color:red;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: calc(1px);
   line-height: 1.1em;
 }
 
 .logotipo{
-  width: 46px;
+  width: 40px;
   margin-right: 8px;
   filter: none;
   height: auto;
 }
 
 .layout_banner{
-  background: linear-gradient(rgb(0 101 169), rgb(117 131 53 / 43%)), url(banner2.webp);
+  background: linear-gradient(#003049a1, #125779), url(banner2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
-  height: calc(100vh - 170px); 
+  height: calc(100vh - 100px);
   width: 100%;
   max-width: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 .container_banner{
-  height: calc(100vh - 100px); 
-  width: 100%;
-  max-width: 100%;
   position: relative;
+  margin: 0 auto;
+  height: calc(100vh - 100px); 
+  width: 1300px;
+  max-width: 1300px;
   z-index: 2;
 }
 
 .legend{
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
   display: flex; 
   justify-content: center; 
   height:100%; 
-  max-width: 70%;
+  max-width: 100%;
   align-items: center;
   margin: auto;
+  gap: 32px
 }
 
 .legend h2{
@@ -166,18 +170,9 @@ footer{
   letter-spacing: 0.7vw;
 }
 
-#logo_diseño{
-    position: fixed;
-    top: 5%;
-    left: -20%;
-    width: 65%;
-    z-index: -1;
-    filter: opacity(0.1);
-}
-
 .whatsapp-btn {
   position: fixed;
-  z-index: 100;
+  z-index: 4;
   bottom: 20px;
   right: 20px;
   width: 50px;
@@ -202,6 +197,14 @@ footer{
 
 .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-3{
   height: 550px;
+}
+
+#galery{
+  width: 100%;
+  padding-top: 100px;
+  background-color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .image-container {
@@ -240,7 +243,7 @@ footer{
   opacity: 0;
   cursor: pointer;
   transition: all 0.8s ease;
-  z-index: 10;
+  z-index: 3;
 }
 
 .image-container:hover .zoom-btn {
@@ -343,10 +346,13 @@ footer{
     margin: 50px auto;
     margin-bottom: 0px;
   }
-  .container_banner, .layout_banner {
-    height: calc(min(100vh, 100dvh));
-  }
   footer{
     height: 200px
   };
+}
+
+.btn-primary{
+  color: #fff;
+    background-color: #004c77c9;
+    border-color: #0d6efd;
 }

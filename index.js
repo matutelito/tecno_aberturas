@@ -87,6 +87,12 @@ function togglePlay(videoId) {
   }
 }
 
+  
+document.getElementById("navigate-obras").addEventListener("click", function() {
+  document.getElementById("galery").scrollIntoView({ behavior: "smooth" });
+})
+
+
 // AOS.init({
 //   once: true,
 //   delay: 10,

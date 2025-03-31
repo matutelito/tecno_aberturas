@@ -144,7 +144,7 @@ footer{
 }
 
 .layout_banner{
-  background: linear-gradient(#003049a1, #125779), url(banner2.webp);
+  background: linear-gradient(#003049a1, #125779d2), url(banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -167,7 +167,7 @@ footer{
 .legend{
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding-top: 100px;
   display: flex; 
   justify-content: center; 
   height: 100%; 

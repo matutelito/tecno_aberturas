@@ -108,7 +108,7 @@ footer{
 
 .container_logo{
   cursor: pointer;
-  padding: 8px 16px; 
+  padding: 8px 24px; 
   position: relative; 
   display: flex; 
   justify-content: center; 
@@ -120,7 +120,7 @@ footer{
   font-family: 'Continuumb';
   margin-left: 5px; 
   letter-spacing: calc(0.5px);
-  font-size: calc(18px + 0.2vw);  
+  font-size: calc(20px + 0.2vw);  
   margin-bottom: 0;
   color: #258FE7;
   font-weight: 700;
@@ -129,15 +129,15 @@ footer{
 .leyend_logo{
   font-family: 'Continuum';
   margin-left: 10px; 
-  font-size: calc(0.7em);
+  font-size: calc(10px + 0.1vw);
   color:red;
   font-weight: 400;
   letter-spacing: calc(1px);
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 .logotipo{
-  width: 28px;
+  width: 34px;
   margin-right: 4px;
   filter: none;
   height: auto;
@@ -191,7 +191,7 @@ footer{
 
 .whatsapp-btn {
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   bottom: 20px;
   right: 20px;
   width: 50px;

@@ -347,15 +347,7 @@
 			}
 
 			#main .thumb > a > img {
-				/* -webkit-tap-highlight-color: rgba(255, 255, 255, 0); */
-				/* background-position: bottom; */
-				/* background-repeat: no-repeat; */
-				/* background-size: cover; */
-				/* border: 0; */
 				height: 100%;
-				/* left: 0; */
-				/* position: absolute;
-				top: 0; */
 				width: 100%;
                 object-fit: cover;
 			}
@@ -519,7 +511,7 @@
 				transition-delay: 2.075s;
 				height: calc(40vh - 2em);
 				min-height: 20em;
-				width: 33.33333%;
+				width: calc(50% - 5px);
 			}
 
 				#main .thumb:nth-child(1) {
@@ -596,7 +588,7 @@
 				transition-delay: 1.625s;
 				height: calc(40vh - 2em);
 				min-height: 20em;
-				width: 50%;
+				width: calc(50% - 5px);
 			}
 
 				#main .thumb:nth-child(1) {
@@ -652,7 +644,7 @@
 				transition-delay: 2.075s;
 				height: calc(28.57143vh - 1.33333em);
 				min-height: 18em;
-				width: 50%;
+				width: calc(50% - 5px);
 			}
 
 				#main .thumb:nth-child(1) {

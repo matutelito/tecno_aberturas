@@ -8,6 +8,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+document.querySelectorAll(".container_logo").forEach(function(element) {
+	element.addEventListener("click", function() {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+	});
+  });
+
 (function($) {
 
 	var	$window = $(window),
@@ -341,23 +350,11 @@
 				var	$this = $(this),
 					$image = $this.find('.image'), $image_img = $image.children('img'),
 					x;
-
-				// No image? Bail.
 					if ($image.length == 0)
 						return;
-
-				// Image.
-				// This sets the background of the "image" <span> to the image pointed to by its child
-				// <img> (which is then hidden). Gives us way more flexibility.
-
-					// Set background.
 						$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
-
-					// Set background position.
 						if (x = $image_img.data('position'))
 							$image.css('background-position', x);
-
-					// Hide original img.
 						$image_img.hide();
 
 			});
@@ -389,10 +386,11 @@
 				  usePopupNav: true,
 				  windowMargin: 50
 				});
-			  } else {
+			}
+			else {
 				$('.thumb > a.image').on('click', function(e) {
 				  e.preventDefault();
 				});
-			  }
+			}
 									
 			})(jQuery);

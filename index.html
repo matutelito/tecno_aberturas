@@ -1,275 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tecno Aluminio, especialistas en aberturas de aluminio, fabricamos y instalamos ventanas, puertas y cerramientos de alta calidad para todo tipo de proyectos.">
-    <meta name="keywords" content="aberturas de aluminio, ventanas de aluminio, puertas de aluminio, cerramientos, instalación de aberturas, Tecno Aluminio">
-    <meta name="author" content="Matias Dobrzanski">
-    <meta name="robots" content="index, follow">
-    <title>Tecno Aluminio - Aberturas de Aluminio de Alta Calidad</title>
-    
-    <meta property="og:title" content="Tecno Aluminio - Aberturas de Aluminio">
-    <meta property="og:description" content="Expertos en la fabricación e instalación de aberturas de aluminio. Ofrecemos soluciones personalizadas para tu hogar o empresa.">
-    <!-- <meta property="og:image" content="URL_DE_TU_IMAGEN_PRINCIPAL">
-    <meta property="og:url" content="URL_DE_TU_SITIO"> -->
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tecno Aluminio - Aberturas de Aluminio">
-    <meta name="twitter:description" content="Fabricación e instalación de aberturas de aluminio para hogares y empresas. Calidad garantizada.">
-    <!-- <meta name="twitter:image" content="URL_DE_TU_IMAGEN_PRINCIPAL">
-
-    <meta name="twitter:url" content="URL_DE_TU_SITIO"> -->
-    <!-- Canonical URL -->
-    <!-- <link rel="canonical" href="URL_DE_TU_SITIO">
-    Favicon
-    <link rel="icon" href="URL_DE_TU_FAVICON" type="image/x-icon"> -->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="index.css?v=3">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-</head>
-<body>
-    <a href="https://wa.me/+5493546416294" class="whatsapp-btn" target="_blank">
-        <i class="ri-whatsapp-line"></i>
-    </a>
-    <nav class="navBar">
-        <div class="container-navbar">
-            <div class="container_logo">
-                <div style="display: flex; align-items:center">
-                    <img src="assests/logotipo.svg" alt="" class="logotipo">
-                    <div>
-                        <h6 class="name_logo">TECNO ALUMINIO</h6>
-                        <p class="leyend_logo">Sistemas de Carpintería</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="layout_banner"></div>
-    <div class="container_banner">
-        <div class="legend">
-            <h2>Trabajos de  <span>alta prestación</span> </h2>
-            <div>
-                <h3>Aberturas - Cerramientos - Frentes comerciales</h3>
-                <h3>Vidrios - DVH  - Laminados - Templados</h3>
-            </div>
-
-            <button class="btn btn-primary" id="navigate-obras">Conocé nuestras obras</button>
-        </div>
-    </div>
-    <section id="galery">
-        <div class="container">
-            <div style="display: flex; justify-content: center;" class="row">
-                <div class="col-4" style="display: flex; flex-direction: column; align-items: flex-start;">
-                </div>
-            </div>
-            <div style="height: 24vh; display: flex; justify-content: center; flex-direction: column;">
-                <h2>Trabajos a medida</h2>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                        <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo2.jpeg" alt="Imagen 12">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                        <button onclick="togglePlay('video_1')"  class="zoom-btn"><i id="play-icon" class="ri-play-circle-line play-icon"></i></button>
-                        <video id="video_1" style="max-height: 100%;" width="100%" muted controls>
-                            <source src="assests/video.mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo1.jpeg" alt="Imagen 12">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-7">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo12.jpeg" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-5">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo13.jpeg" alt="Imagen 5">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo9.jpeg" alt="Imagen 2">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo7.jpeg" alt="Imagen 2" style="object-fit: fill">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo15.jpeg" alt="Imagen 3">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-3">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo16.jfif" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo22.jfif" alt="Imagen 5">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-3">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo17.jfif" alt="Imagen 4">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo18.jfif" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo19.jfif" alt="Imagen 5">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-3">
-                    <div class="image-container">
-                        <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo27.jfif" alt="Imagen 4" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo26.jfif" alt="Imagen 5">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-3">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo28.jfif" alt="Imagen 4" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-7">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo4.jpeg" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-5">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo5.jpeg" alt="Imagen 5">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                        <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo10.jpeg" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo11.jpeg" alt="Imagen 5">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-4">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo6.jpeg" alt="Imagen 4">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo21.jfif" alt="Imagen 4">
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-lg-6">
-                    <div class="image-container">
-                    <button  class="zoom-btn"><i class="ri-aspect-ratio-line zoom-icon"></i></button>
-                        <img src="assests/gonzalo20.jfif" alt="Imagen 5">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container-footer">
-            <div class="container_logo">
-                <div style="display: flex; align-items:center">
-                    <img src="assests/logotipo.svg" alt="" class="logotipo">
-                    <div>
-                        <h6 class="name_logo">TECNO ALUMINIO</h6>
-                        <p class="leyend_logo">Sistemas de Carpintería</p>
-                    </div>
-                </div>
-            </div>
-            <p id="year"></p>
-        </div>
-    </footer>
-    
-    <div id="imageModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselImages" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-inner"></div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="index.js"></script>
-  </body>
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+	
+<html>
+	<head>
+		<title>Tecno Aberturas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Especialistas en aberturas de aluminio con más de 10 años de experiencia." />		
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/multiverse.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<a href="https://wa.me/+5493546416294" class="whatsapp-btn" target="_blank">
+			<i class="ri-whatsapp-line"></i>
+		</a>
+	
+		<div id="wrapper">
+			<header id="header" class="alt">
+				<nav>
+					<div class="container_logo">
+						<img src="assets/logotipo_v2.svg" alt="" class="logotipo">
+						<div>
+							<div class="name_logo">TECNO ALUMINIO</div>
+							<div class="leyend_logo">Sistemas de Carpintería</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<section id="banner" class="major">
+				<div class="inner">
+					<header class="major">
+						<h1>Bienvenidos a Tecno Aluminio</h1>
+					</header>
+					<div class="content">
+						<p>Con mas de 10 años de experiencia<br />
+						somos especielistas en aberturas de aluminio</p>
+						<ul class="actions">
+							<li><a href="#gallery" class="button next scrolly">Galería de obras</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div id="main">
+				<section id="services" class="tiles">
+					<article>
+						<span class="image">
+							<img src="images/girl.jpg" alt="mujer_ventanal"/>
+						</span>
+						<header class="major">
+							<h3>Sistemas de Carpintería</h3>
+							<p>Especialistas en aluminio</p>
+						</header>
+					</article>
+					<article>
+						<span class="image">
+							<img src="images/boy.jpg" alt="hombre_trabajando"/>
+						</span>
+						<header class="major">
+							<h3>Trabajos a medida</h3>
+							<p>Diseñamos, construimos e instalamos.</p>
+						</header>
+					</article>
+				</section>
+				<section id="gallery">
+					<div class="gallery">
+						<header class="major" style="width: 100%; color: black">
+							<h3 style="color: black">Galería</h3>
+							<p>Conoce algunos de nuestros proyectos</p>
+						</header>
+						<!-- <button onclick="togglePlay('video_1')" class="zoom-btn"><i id="play-icon" class="ri-play-circle-line play-icon"></i></button>
+						<video id="video_1" style="max-height: 100%;" width="100%" muted controls>
+							<source src="assets/video.mp4">
+						</video> -->
+						<article class="thumb">
+							<a href="images/fulls/gonzalo12.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo12.jpeg" alt="Imagen 12">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo13.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo13.jpeg" alt="Imagen 12">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo2.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo2.jpeg" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo1.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo1.jpeg" alt="Imagen 5">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo9.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo9.jpeg" alt="Imagen 2">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo15.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo15.jpeg" alt="Imagen 3">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo16.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo16.jfif" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo22.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo22.jfif" alt="Imagen 5">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo17.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo17.jfif" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo18.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo18.jfif" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb">
+							<a href="images/fulls/gonzalo19.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo19.jfif" alt="Imagen 5">
+							</a>
+						</article>		
+						<article class="thumb">
+							<a href="images/fulls/gonzalo7.jpeg" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo7.jpeg" alt="Imagen 5">
+							</a>
+						</article>					
+					</div>
+				</section>
+				<section id="us">
+					<div class="inner">
+						<header class="major">
+							<h2>Tecno Aluminio</h2>
+						</header>
+						<p>Mas de 10 años de experiencia desarrollando obras en el Valle de de Calamuchita.</p>
+						<h6 style="margin-bottom: 0;">El Divisadero, X5864 Villa Rumipal, Córdoba</h6>
+						<h6>03546 41-6294</h6>
+						<!-- <ul class="actions">
+							<li><a href="landing.html" class="button next">Get Started</a></li>
+						</ul> -->
+					</div>
+				</section>
+			</div>
+			<footer id="footer">
+				<div class="inner">
+					<div class="container_logo">
+						<img src="assets/logotipo_v2.svg" alt="" class="logotipo">
+						<div>
+							<div class="name_logo">TECNO ALUMINIO</div>
+							<div class="leyend_logo">Sistemas de Carpintería</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>

@@ -91,6 +91,23 @@ input, select, textarea {
 	appearance: none;
 }
 
+#especialistas {
+	width: 55%!important;
+}
+
+#trabajos_a_medida{
+	width: 45%!important;
+}
+
+/* container */
+
+.container{
+	width: 100%;
+	max-width: 65em;
+	margin: 0 auto;
+	padding: 3em 0.6em 0 0.6em;
+}
+
 /* wsp */
 .whatsapp-btn {
 	position: fixed;
@@ -128,62 +145,19 @@ input, select, textarea {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 5em 0.6em;
+	padding: 2em 0.6em;
 	flex-wrap: wrap;
 }
 
-/* .gallery .img_gallery {
-    width: calc(50% - 0.3em);
-    margin-bottom: 0.6em;
-    height: 22em;
-    filter: brightness(0.9);
-    object-fit: cover;
-} */
-
-.gallery > header.major > :first-child:after {
+#gallery > .container > header.major > :first-child:after {
 	content: '';
-	background-color: #000000;
+	background-color: #000000!important;
 }
   
 video{
 	object-fit: none;
 }
     
-/* .gallery img:nth-of-type(1) {
-	width: calc(60% - 0.3em);
-	object-position: top;
-	object-fit: cover;
-	height: 22em;
-}
-
-.gallery img:nth-of-type(2) {
-	width: calc(40% - 0.3em);
-	object-position: left;
-	object-fit: cover;
-}
-
-.gallery img:nth-of-type(9) {
-	width: calc(50% - 0.3em);
-	object-position: center;
-	height: 25em;
-	object-fit: fill;
-
-}
-
-.gallery img:nth-of-type(10) {
-	width: calc(50% - 0.3em);
-	object-position: left;
-	object-fit: cover;
-	height: 25em;
-} */
-
-
-@media (max-width: 800px) {
-	.gallery > img{
-		width: calc(100%)!important;
-	}
-}
-
 /* logo */
 
 .container_logo{
@@ -221,6 +195,7 @@ video{
   }
 
 /* ys */
+
   	#us header {
 		margin-bottom: 0;
 	}
@@ -2929,7 +2904,7 @@ video{
 				opacity: 0;
 			}
 
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+			.tiles article {
 				width: 60%;
 			}
 
@@ -2959,20 +2934,20 @@ video{
 
 		@media screen and (max-width: 1280px) {
 
-			.tiles article {
+			/* .tiles article {
 				padding: 4em 3em 2em 3em ;
 				height: 30vh;
 				max-height: 30em;
 				min-height: 20em;
-			}
+			} */
 
 		}
 
 		@media screen and (max-width: 980px) {
 
-			.tiles article {
+			/* .tiles article {
 				width: 50% !important;
-			}
+			} */
 
 		}
 
@@ -2980,29 +2955,19 @@ video{
 
 			.tiles article {
 				padding: 3em 1.5em 1em 1.5em ;
-				height: 16em;
+				/* height: 16em;
 				max-height: none;
-				min-height: 0;
+				min-height: 0; */
 			}
 
-				.tiles article h3 {
-					font-size: 1.5em;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.tiles {
-				display: block;
+			.tiles article h3 {
+				font-size: 1.5em;
 			}
-
-				.tiles article {
-					height: 20em;
-					width: 100% !important;
-				}
-
+			.tiles article {
+				width: 100%;
+			}
 		}
+
 
 /* Contact Method */
 
@@ -3138,7 +3103,14 @@ video{
 		}
 
 		@media screen and (max-width: 980px) {
-
+			#especialistas {
+				width: 100%!important;
+			}
+			
+			#trabajos_a_medida{
+				width: 100%!important;
+			}
+			
 			.spotlights > section {
 				display: block;
 			}
@@ -4054,9 +4026,6 @@ video{
 			opacity: 1;
 			visibility: visible;
 		}
-
-
-
 
 
 		

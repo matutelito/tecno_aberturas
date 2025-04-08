@@ -23,6 +23,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/multiverse.css" />
+		<link rel="stylesheet" href="assets/css/grid_gallery.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 	</head>
@@ -59,7 +60,7 @@
 			</section>
 			<div id="main">
 				<section id="services" class="tiles">
-					<article>
+					<article id="especialistas">
 						<span class="image">
 							<img src="images/girl.jpg" alt="mujer_ventanal"/>
 						</span>
@@ -68,7 +69,7 @@
 							<p>Especialistas en aluminio</p>
 						</header>
 					</article>
-					<article>
+					<article id="trabajos_a_medida">
 						<span class="image">
 							<img src="images/boy.jpg" alt="hombre_trabajando"/>
 						</span>
@@ -79,126 +80,146 @@
 					</article>
 				</section>
 				<section id="gallery">
-					<div class="gallery">
+					<div class="container">
 						<header class="major" style="width: 100%; color: black">
 							<h3 style="color: black">Galería</h3>
 							<p>Conoce algunos de nuestros proyectos</p>
 						</header>
+					</div>
+
+					<div class="gallery grid-gallery">
 						<!-- <button onclick="togglePlay('video_1')" class="zoom-btn"><i id="play-icon" class="ri-play-circle-line play-icon"></i></button>
 						<video id="video_1" style="max-height: 100%;" width="100%" muted controls>
 							<source src="assets/video.mp4">
 						</video> -->
-						<article class="thumb">
-							<a href="images/fulls/gonzalo12.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo12.jpeg" alt="Imagen 12">
+						<article class="thumb row-span-2 col-span-5">
+							<a href="images/fulls/gonzalo16.jfif" class="image col-span-8">
+								<img class="img_gallery" src="images/thumbs/gonzalo16.jfif" alt="Imagen 12">
 							</a>
 						</article>
 						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo13.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo13.jpeg" alt="Imagen 12">
-							</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo2.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo2.jpeg" alt="Imagen 4">
-							</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo1.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo1.jpeg" alt="Imagen 5">
-							</a>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo6.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo6.jpeg" alt="Imagen 12">
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo22.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo22.jfif" alt="Imagen 12">
 							</a>
 						</article>
 
-						<article class="thumb">
-							<a href="images/fulls/gonzalo9.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo9.jpeg" alt="Imagen 2">
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo26.jfif" class="image">
+								<img class="img_gallery" src="images/thumbs/gonzalo26.jfif" alt="Imagen 4">
 							</a>
 						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo15.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo15.jpeg" alt="Imagen 3">
-							</a>
-						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo16.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo16.jfif" alt="Imagen 4">
-							</a>
-						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo22.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo22.jfif" alt="Imagen 5">
-							</a>
-						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo17.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo17.jfif" alt="Imagen 4">
-							</a>
-						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo18.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo18.jfif" alt="Imagen 4">
-							</a>
-						</article>
-						
-						<article class="thumb">
-							<a href="images/fulls/gonzalo19.jfif" class="image">
+
+						<!-- row -->
+
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo19.jfif" class="image grid-gallery__item">
 								<img class="img_gallery" src="images/thumbs/gonzalo19.jfif" alt="Imagen 5">
 							</a>
-						</article>		
-						<article class="thumb">
-							<a href="images/fulls/gonzalo7.jpeg" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo7.jpeg" alt="Imagen 5">
+						</article>
+
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo18.jfif" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo18.jfif" alt="Imagen 2">
 							</a>
 						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo26.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo26.jfif" alt="Imagen 5">
-							</a>
-						</article>					
-						<article class="thumb">
-							<a href="images/fulls/gonzalo27.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo27.jfif" alt="Imagen 5">
-							</a>
-						</article>					
-						<article class="thumb">
-							<a href="images/fulls/gonzalo28.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo28.jfif" alt="Imagen 5">
+
+						<article class="thumb col-span-5 row-span-2">
+							<a href="images/fulls/gonzalo17.jfif" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo17.jfif" alt="Imagen 12">
 							</a>
 						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo28.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo28.jfif" alt="Imagen 5">
-							</a>
-						</article>					
-						<article class="thumb">
-							<a href="images/fulls/gonzalo28.jfif" class="image">
-								<img class="img_gallery" src="images/thumbs/gonzalo28.jfif" alt="Imagen 5">
+
+						<!-- row -->
+
+						<article class="thumb col-span-6 row-span-2">
+							<a href="images/fulls/gonzalo1.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo1.jpeg" alt="Imagen 4">
 							</a>
 						</article>
-						<article class="thumb">
-							<a href="images/fulls/gonzalo21.jfif" class="image">
+
+						<article class="thumb col-span-6 row-span-2">
+							<a href="images/fulls/gonzalo2.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo2.jpeg" alt="Imagen 3">
+							</a>
+						</article>
+						
+						<!-- row -->
+
+						<article class="thumb col-span-3">
+							<a href="images/fulls/gonzalo5.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo5.jpeg" alt="Imagen 5">
+							</a>
+						</article>
+						
+						<article class="thumb col-span-3">
+							<a href="images/fulls/gonzalo6.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo6.jpeg" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb col-span-3">
+							<a href="images/fulls/gonzalo8.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo8.jpeg" alt="Imagen 4">
+							</a>
+						</article>
+						
+						<article class="thumb col-span-3">
+							<a href="images/fulls/gonzalo11.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo11.jpeg" alt="Imagen 5">
+							</a>
+						</article>
+
+						<!-- row  -->
+						
+						<article class="thumb col-span-6">
+							<a href="images/fulls/gonzalo12.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo12.jpeg" alt="Imagen 5">
+							</a>
+						</article>
+
+						<article class="thumb col-span-6">
+							<a href="images/fulls/gonzalo13.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo13.jpeg" alt="Imagen 5">
+							</a>
+						</article>	
+						
+						<!-- row -->
+
+						<article class="thumb col-span-6">
+							<a href="images/fulls/gonzalo21.jfif" class="image grid-gallery__item">
 								<img class="img_gallery" src="images/thumbs/gonzalo21.jfif" alt="Imagen 5">
 							</a>
-						</article>					
-						<article class="thumb">
-							<a href="images/fulls/gonzalo20.jfif" class="image">
+						</article>	
+
+						<article class="thumb col-span-6">
+							<a href="images/fulls/gonzalo20.jfif" class="image grid-gallery__item">
 								<img class="img_gallery" src="images/thumbs/gonzalo20.jfif" alt="Imagen 5">
 							</a>
-						</article>					
-					
+						</article>
+
+						<!-- row -->
+						
+						<article class="thumb row-span-2 col-span-5">
+							<a href="images/fulls/gonzalo7.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo7.jpeg" alt="Imagen 5">
+							</a>
+						</article>	
+
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo9.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo9.jpeg" alt="Imagen 5">
+							</a>
+						</article>
+
+						<article class="thumb col-span-7">
+							<a href="images/fulls/gonzalo15.jpeg" class="image grid-gallery__item">
+								<img class="img_gallery" src="images/thumbs/gonzalo15.jpeg" alt="Imagen 5">
+							</a>
+						</article>		
 					</div>
 				</section>
+
 				<section id="us">
 					<div class="inner">
 						<header class="major">

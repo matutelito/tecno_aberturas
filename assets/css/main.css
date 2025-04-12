@@ -153,11 +153,7 @@ input, select, textarea {
 	content: '';
 	background-color: #000000!important;
 }
-  
-video{
-	object-fit: none;
-}
-    
+video {width: 100%;}    
 /* logo */
 
 .container_logo{
